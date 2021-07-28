@@ -1,2 +1,2 @@
 # CP-codes
-Implementations of frequently used data structures and algorithms in competitive programming.
+Implementations (in C++) of frequently used data structures and algorithms in competitive programming.
