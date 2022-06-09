@@ -13,15 +13,13 @@ int leader(int x){
 void unite(int a,int b){
 	a=leader(a);
 	b=leader(b);
-	if(size[a]>=size[b]){
-		link[b]=a;
-		size[a]+=size[b];
-		size[b]=0;
+	if(size[a]<size[b]){
+		par[a]=b;
+		size[b]++;
 	}
 	else{
-		link[a]=b;
-		size[b]+=size[a];
-		size[a]=0;
+		par[b]=a;
+		size[a]++;
 	}
 }
 signed main(){
